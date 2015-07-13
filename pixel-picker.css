@@ -1,0 +1,39 @@
+.pixel-picker-container {
+  box-sizing: border-box;
+  background-color: #fff;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.pixel-picker-row {
+  margin: 0;
+  width: 100%;
+  display: table;
+  clear: both;
+}
+
+.pixel-picker-cell {
+  display: table-cell;
+  padding-top: 5%;
+  cursor: pointer;
+  background-color: #fff;
+  box-shadow: inset -1px -1px 0 0 rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  transition: background-color 0.05s ease-in;
+}
+
+.pixel-picker-row:first-child .pixel-picker-cell {
+  box-shadow: inset -1px -1px 0 0 rgba(0, 0, 0, 0.2),
+              inset 0 1px 0 0 rgba(0, 0, 0, 0.2);
+}
+
+.pixel-picker-row .pixel-picker-cell:first-child {
+  box-shadow: inset -1px -1px 0 0 rgba(0, 0, 0, 0.2),
+              inset 1px 0 0 0 rgba(0, 0, 0, 0.2);
+}
+
+.pixel-picker-row:first-child .pixel-picker-cell:first-child {
+  box-shadow: inset -1px -1px 0 0 rgba(0, 0, 0, 0.2),
+              inset 1px 1px 0 0 rgba(0, 0, 0, 0.2);
+}
