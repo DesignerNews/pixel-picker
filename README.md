@@ -4,6 +4,8 @@
 
 Create cool pixel art. Used on Designer News.
 
+![](https://dl.dropboxusercontent.com/s/f2sj8e7n91c3jkb/GifTree.gif)
+
 ## Usage
 
 * Include jQuery
