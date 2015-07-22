@@ -138,7 +138,7 @@
       ready: null,
       rowSelector: '.pixel-picker-row',
       cellSelector: '.pixel-picker-cell',
-      eraserColor: '#ffffff',
+      eraserColor: null,
       palette: [
         '#ffffff', '#000000',
         '#ff0000', '#0000ff',
@@ -153,7 +153,13 @@
 
     // Add the eraser color as the first color in
     // the palette. Required to make color cycling work.
-    palette.unshift(parseColor(settings.eraserColor))
+    // If eraserColor is left unset, first color in
+    // palette is assigned
+    if (settings.eraserColor == null) {
+      settings.eraserColor = settings.palette[0];
+    } else {
+      palette.unshift(parseColor(settings.eraserColor));
+    };
 
     $(window)
       // Prevent context menu from showing up over top of cells

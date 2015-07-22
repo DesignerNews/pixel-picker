@@ -70,9 +70,11 @@ Default:
 
 `String` | The color used for the eraser
 
-Can be any of the values used for `palette`
+Can be any of the values used for `palette`.
 
-Default: `#ffffff`
+If set the color will be prepended to the palette. If left as `null` the eraser will default to the first color in your palette.
+
+Default: `null`
 
 #### rowSelector and cellSelector
 
