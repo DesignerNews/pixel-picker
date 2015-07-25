@@ -6,7 +6,7 @@ Create cool pixel art. Used on Designer News.
 
 ![](https://dl.dropboxusercontent.com/s/yvsi1tuq86m9vww/GifPixelTree.gif)
 
-## Usage
+## Installation
 
 * Include jQuery
 * Include the plugin JS
@@ -109,3 +109,20 @@ Default: `null`
 Since the plugin can sometimes take a few seconds to initially calculate the cells, this function will be called when everything is ship-shape.
 
 Default: `null`
+
+## Usage
+
+Once installed, you can click within a cell to do things:
+
+* Click to fill a cell with the next color in your palette
+* Right click to do the same, but in reverse
+* CMD (or CTRL) click to erase the cell's color
+* Click and drag around to fill surrounding cells with that same color
+
+## License
+
+MIT
+
+## Contribute
+
+If you find a bug or want to improve the plugin, just submit a pull request. Take care to maintain existing code style.
