@@ -1,6 +1,6 @@
 # Pixel Picker
 
-`v0.1.1`
+`v0.1.2`
 
 Create cool pixel art. Used on Designer News.
 
