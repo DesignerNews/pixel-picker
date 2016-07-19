@@ -158,7 +158,25 @@
     if (settings.eraserColor == null) {
       settings.eraserColor = settings.palette[0];
     } else {
-      palette.unshift(parseColor(settings.eraserColor));
+      var eraserColor = parseColor(settings.eraserColor);
+
+      var existingEraserColorPosition = (function() {
+        var matchingIndex;
+
+        palette.forEach(function(color, index) {
+          if (arrayEqual(color, eraserColor)) {
+            matchingIndex = index;
+          };
+        });
+
+        return matchingIndex;
+      })();
+
+      if (existingEraserColorPosition != null) {
+        palette.slice(existingEraserColorPosition, 1);
+      };
+
+      palette.unshift();
     };
 
     $(window)
