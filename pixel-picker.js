@@ -1,7 +1,7 @@
 /*!
  * Pixel Picker - a jQuery plugin to create cool pixel art.
  *
- * Copyright (c) 2015 Designer News Ltd.
+ * Copyright (c) 2016 Designer News Ltd.
  *
  * Project home:
  *   https://github.com/DesignerNews/pixel-picker
