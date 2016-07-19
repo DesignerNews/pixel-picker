@@ -4,7 +4,7 @@
 
 Create cool pixel art. Used on Designer News.
 
-![](https://dl.dropboxusercontent.com/s/yvsi1tuq86m9vww/GifPixelTree.gif)
+![](example.gif)
 
 ## Installation
 
